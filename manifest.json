@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "llamacpp-loader",
+  "name": "LLaMA.cpp Loader",
+  "version": "0.1.0",
+  "author": "Nuno",
+  "description": "Load and unload openweight LLMs on a local llama-server, with a model library panel",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "LLaMA.cpp Loader",
+    "description": "Manage a local llama-server and its loaded LLM",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "host": "127.0.0.1",
+      "port": 8080,
+      "metrics": true,
+      "pollInterval": 3
+    }
+  }
+}
