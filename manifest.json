@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "llamacpp-loader",
+  "id": "io.github.nunodonato.llamacpp-loader",
   "name": "LLaMA.cpp Loader",
   "version": "0.1.0",
   "author": "Nuno",
+  "license": "MIT",
   "description": "Load and unload openweight LLMs on a local llama-server, with a model library panel",
   "kinds": [
     "bar-widget"

@@ -33,10 +33,10 @@ A plugin is a git repo with `manifest.json` at its root. Add it by repo or by
 hand:
 
 ```bash
-omarchy plugin add <this repo url> --enable --yes
+omarchy plugin add https://github.com/nunodonato/llamacpp-loader.git --enable --yes
 # or, hand install:
-mkdir -p ~/.config/omarchy/plugins/llamacpp-loader
-cp manifest.json llama.py Model.js BarWidget.qml Panel.qml ~/.config/omarchy/plugins/llamacpp-loader/
+mkdir -p ~/.config/omarchy/plugins/io.github.nunodonato.llamacpp-loader
+cp manifest.json llama.py Model.js BarWidget.qml Panel.qml ~/.config/omarchy/plugins/io.github.nunodonato.llamacpp-loader/
 omarchy-shell shell rescanPlugins
 ```
 
@@ -44,7 +44,7 @@ Then add it to your bar in `~/.config/omarchy/shell.json` (it appears in
 `bar.layout.*`; the plugin ships a `defaultSection` of `right`). Move it with:
 
 ```bash
-omarchy bar move llamacpp-loader --section right
+omarchy bar move io.github.nunodonato.llamacpp-loader --section right
 ```
 
 Saving a file under `~/.config/omarchy/plugins/` hot-reloads; force with

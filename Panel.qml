@@ -12,8 +12,8 @@ import "Model.js" as Model
 // pastes a Hugging Face GGUF reference exactly as they would to llama-server.
 Panel {
   id: root
-  moduleName: "llamacpp-loader"
-  ipcTarget: "llamacpp-loader"
+  moduleName: "io.github.nunodonato.llamacpp-loader"
+  ipcTarget: "io.github.nunodonato.llamacpp-loader"
   manageIpc: false
 
   property var anchorItem: null

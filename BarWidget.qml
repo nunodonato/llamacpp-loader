@@ -18,7 +18,7 @@ import "Model.js" as Model
 // the source of truth, so the icon reflects reality no matter who crashed.
 BarWidget {
   id: root
-  moduleName: "llamacpp-loader"
+  moduleName: "io.github.nunodonato.llamacpp-loader"
 
   function pythonBin() {
     return Quickshell.env("PYTHON") || "python3"
@@ -171,7 +171,7 @@ BarWidget {
   onSettingsChanged: injectPanel()
 
   IpcHandler {
-    target: "llamacpp-loader"
+    target: "io.github.nunodonato.llamacpp-loader"
     function open(): void { root.open() }
     function close(): void { root.close() }
     function show(): void { root.open() }
