@@ -1,5 +1,7 @@
 # llamacpp-loader
 
+![preview](preview.png)
+
 An [Omarchy](https://omarchy.org/) shell plugin for loading openweight LLMs on a
 local [llama-server](https://github.com/ggml-org/llama.cpp). It adds a bar
 status icon and a model-library panel.
